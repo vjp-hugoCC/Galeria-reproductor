@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,7 +18,9 @@ import com.example.reproductor_musica.databinding.FragmentVideoBinding;
  * A placeholder fragment containing a simple view.
  */
 public class AudioFragment extends Fragment {
-
+    ToggleButton toggle_play;
+    Button btn_back;
+    Button btn_next;
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private PageViewModel pageViewModel;
