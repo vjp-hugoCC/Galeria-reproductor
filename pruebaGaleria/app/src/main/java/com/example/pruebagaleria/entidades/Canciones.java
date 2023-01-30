@@ -1,6 +1,8 @@
 package com.example.pruebagaleria.entidades;
 
-public class Canciones {
+import java.io.Serializable;
+
+public class Canciones implements Serializable {
 
     private int id;
     private String nombre;

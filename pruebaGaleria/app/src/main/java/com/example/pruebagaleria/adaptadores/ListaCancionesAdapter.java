@@ -17,16 +17,19 @@ import java.util.ArrayList;
 
 public class ListaCancionesAdapter extends RecyclerView.Adapter<ListaCancionesAdapter.CancionViewHolder> {
 
-    ArrayList<Canciones> listaCanciones;
-    public ListaCancionesAdapter(ArrayList<Canciones> listaCanciones){
+    private ArrayList<Canciones> listaCanciones;
+    private OnCancionListener monCancionListener;
+
+    public ListaCancionesAdapter(ArrayList<Canciones> listaCanciones, OnCancionListener onCancionListener){
         this.listaCanciones=listaCanciones;
+        this.monCancionListener=onCancionListener;
     }
 
     @NonNull
     @Override
     public CancionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.cancion_item,null,false);
-        return new CancionViewHolder(view);
+        return new CancionViewHolder(view, monCancionListener);
     }
 
     @Override
@@ -41,16 +44,28 @@ public class ListaCancionesAdapter extends RecyclerView.Adapter<ListaCancionesAd
         return listaCanciones.size();
     }
 
-    public class CancionViewHolder extends RecyclerView.ViewHolder {
+    public class CancionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView viewNombre, viewAutor;
         ImageView viewImagen;
+        OnCancionListener onCancionListener;
 
-        public CancionViewHolder(@NonNull View itemView) {
+        public CancionViewHolder(@NonNull View itemView, OnCancionListener onCancionListener) {
             super(itemView);
             viewNombre=itemView.findViewById(R.id.textViewCancion);
             viewAutor=itemView.findViewById(R.id.textViewAutores);
-            viewImagen=itemView.findViewById(R.id.imageView);
+            viewImagen=itemView.findViewById(R.id.foto);
+            this.onCancionListener=onCancionListener;
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            onCancionListener.onCancionClick(getAdapterPosition());
+        }
+    }
+    public interface OnCancionListener{
+        void onCancionClick(int posicion);
     }
 }
