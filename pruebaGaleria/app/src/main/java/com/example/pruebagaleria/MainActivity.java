@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pruebagaleria.adaptadores.ListaCancionesAdapter;
 import com.example.pruebagaleria.entidades.Canciones;
-import com.google.android.things.bluetooth.ConnectionParams;
 
 import java.util.ArrayList;
 
