@@ -52,7 +52,7 @@
             android:id="@+id/play_pause_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/play"/>
+            android:src="@drawable/pause"/>
 
         <ImageButton
             android:id="@+id/next_button"
