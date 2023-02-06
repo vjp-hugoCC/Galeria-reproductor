@@ -2,20 +2,19 @@ package com.example.pruebagaleria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerView;
+import com.example.pruebagaleria.entidades.Canciones;
 
 public class AudioActivity extends AppCompatActivity {
     private SeekBar progressBar;
+    private ImageView portada;
 
-
+    MediaPlayer mPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,19 +22,17 @@ public class AudioActivity extends AppCompatActivity {
 
         //captura
         progressBar = findViewById(R.id.seek_bar);
+        portada = findViewById(R.id.portada);
 
-        //audio
-        // Inicializar ExoPlayer
-        SimpleExoPlayer player = new SimpleExoPlayer.Builder(this).build();
-
-        // Crear una fuente de medios a partir de una URL
-        Uri audioUri = Uri.parse("https://www.youtube.com/watch?v=video_id");
-        MediaSource mediaSource = new ExtractorMediaSource.Factory(new DefaultHttpDataSourceFactory("exoplayer-codelab")).createMediaSource(audioUri);
-
-        // Preparar la fuente de medios en el reproductor
-        player.prepare(mediaSource);
-
-        // Iniciar la reproducción
-        player.setPlayWhenReady(true);
+        /*//audio
+        mPlayer = MediaPlayer.create(this, R.raw.cancion1);
+        mPlayer.start();
+        */
     }
+
+    public void cargarPortada(){
+        portada.setImageResource(R.drawable.cancion);
+    }
+
+
 }

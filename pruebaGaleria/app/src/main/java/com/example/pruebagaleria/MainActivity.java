@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,13 +19,15 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ListaCancionesAdapter.OnCancionListener {
     private RecyclerView listaCanciones;
+    Switch formato;
     private ArrayList<Canciones> listaArrayCanciones;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //captura elementos
+        formato = findViewById(R.id.switch_formato);
 
         listaCanciones=findViewById(R.id.listaCanciones);
         listaCanciones.setLayoutManager(new LinearLayoutManager(this));
@@ -40,8 +43,14 @@ public class MainActivity extends AppCompatActivity implements ListaCancionesAda
 
     @Override
     public void onCancionClick(int posicion) {
-        Intent intent=new Intent(this,VideoActivity.class);
-        intent.putExtra("cancion",listaArrayCanciones.get(posicion));
-        startActivity(intent);
+        if(formato.isChecked()){
+            Intent intent=new Intent(this,VideoActivity.class);
+            intent.putExtra("cancion",listaArrayCanciones.get(posicion));
+            startActivity(intent);
+        }else{
+            Intent intent=new Intent(this,AudioActivity.class);
+            intent.putExtra("cancion",listaArrayCanciones.get(posicion));
+            startActivity(intent);
+        }
     }
 }
