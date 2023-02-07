@@ -12,7 +12,7 @@
         android:layout_weight="40"></ImageView>
 
     <TextView
-        android:id="@+id/title_text_view"
+        android:id="@+id/text_titulo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
@@ -21,7 +21,7 @@
         android:gravity="center_horizontal"/>
 
     <TextView
-        android:id="@+id/artist_text_view"
+        android:id="@+id/text_autores"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"

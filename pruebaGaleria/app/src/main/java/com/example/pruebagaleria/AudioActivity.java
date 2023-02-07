@@ -10,8 +10,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.pruebagaleria.entidades.Canciones;
+import com.squareup.picasso.Picasso;
+
+import java.io.IOException;
 
 public class AudioActivity extends AppCompatActivity implements View.OnClickListener {
     private SeekBar progressBar;
@@ -20,7 +25,13 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
     private ImageButton previous;
     private ImageButton next;
 
+    private TextView titulo;
+
+    private TextView autores;
+
     private Boolean running;
+
+    private Canciones cancion;
 
     MediaPlayer mPlayer;
     @Override
@@ -30,6 +41,7 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
 
         //atributos
         running = true;
+        cancion = (Canciones) getIntent().getExtras().get("cancion");
 
         //captura
         progressBar = findViewById(R.id.seek_bar);
@@ -40,16 +52,22 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
         previous.setOnClickListener(this);
         next = findViewById(R.id.next_button);
         next.setOnClickListener(this);
+        titulo = findViewById(R.id.text_titulo);
+        autores = findViewById(R.id.text_autores);
 
+
+        cargarCancion();
 
         //audio
-        mPlayer = MediaPlayer.create(this, R.raw.cancion1);
-        mPlayer.start();
+        /*mPlayer = MediaPlayer.create(this, R.raw.cancion1);
+        mPlayer.start();*/
 
     }
 
-    public void cargarPortada(){
-        portada.setImageResource(R.drawable.cancion);
+    public void cargarCancion(){
+        Picasso.get().load(cancion.getImagen()).into(portada);
+        titulo.setText(cancion.getNombre());
+        autores.setText(cancion.getAutor());
     }
 
 
