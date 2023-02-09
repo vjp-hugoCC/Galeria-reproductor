@@ -2,9 +2,11 @@ package com.example.pruebagaleria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DownloadManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -16,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.pruebagaleria.entidades.Canciones;
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.io.IOException;
 
 public class AudioActivity extends AppCompatActivity implements View.OnClickListener {
@@ -34,6 +37,8 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
     private Canciones cancion;
 
     MediaPlayer mPlayer;
+
+    int duracion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +64,28 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
         cargarCancion();
 
         //audio
-        /*mPlayer = MediaPlayer.create(this, R.raw.cancion1);
-        mPlayer.start();*/
+        try {
+            mPlayer = new MediaPlayer();
+            mPlayer.setDataSource("https://cdn.discordapp.com/attachments/889276132044726275/1073354259086717049/onlymp3.to_-_CHORRITO_PA_LAS_ANIMAS-P79-1huorVw-192k-1654117303989.mp3");
+            mPlayer.prepare();
+            mPlayer.start();
+
+            duracion = mPlayer.getDuration();
+            progressBar.setMax(duracion);
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (mPlayer != null && mPlayer.isPlaying()) {
+                        int currentPosition = mPlayer.getCurrentPosition();
+                        progressBar.setProgress(currentPosition);
+                    }
+                }
+            }).start();
+
+        }catch (Exception e){
+            System.out.println("Error E/S");
+        }
 
     }
 
