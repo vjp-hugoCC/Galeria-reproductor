@@ -10,16 +10,19 @@ public class Canciones implements Serializable {
     private String imagen;
     private String video;
 
+    private String audio;
+
     public Canciones(int id) {
         this.id = id;
     }
 
-    public Canciones(int id, String nombre, String autor, String imagen, String video) {
+    public Canciones(int id, String nombre, String autor, String imagen, String video, String audio) {
         this.id = id;
         this.nombre = nombre;
         this.autor = autor;
         this.imagen = imagen;
         this.video = video;
+        this.audio = audio;
     }
 
     public int getId() {
@@ -62,6 +65,14 @@ public class Canciones implements Serializable {
         this.video = video;
     }
 
+    public String getAudio() {
+        return audio;
+    }
+
+    public void setAudio(String audio) {
+        this.audio = audio;
+    }
+
     @Override
     public String toString() {
         return "Canciones{" +
@@ -70,6 +81,7 @@ public class Canciones implements Serializable {
                 ", autor='" + autor + '\'' +
                 ", imagen='" + imagen + '\'' +
                 ", video='" + video + '\'' +
+                ", audio='" + audio + '\'' +
                 '}';
     }
 }

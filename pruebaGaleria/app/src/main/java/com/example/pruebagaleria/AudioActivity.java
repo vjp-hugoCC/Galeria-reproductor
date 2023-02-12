@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.example.pruebagaleria.entidades.Canciones;
 import com.squareup.picasso.Picasso;
 
