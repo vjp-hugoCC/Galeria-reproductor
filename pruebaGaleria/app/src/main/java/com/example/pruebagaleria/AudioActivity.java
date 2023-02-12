@@ -13,12 +13,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pruebagaleria.entidades.Canciones;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class AudioActivity extends AppCompatActivity implements View.OnClickListener {
     private SeekBar progressBar;
@@ -33,7 +35,9 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
 
     private Boolean running;
 
-    private Canciones cancion;
+    private ArrayList<Canciones> canciones;
+
+    private int indiceCancion;
 
     MediaPlayer mPlayer;
 
@@ -45,7 +49,9 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
 
         //atributos
         running = true;
-        cancion = (Canciones) getIntent().getExtras().get("cancion");
+        canciones = (ArrayList<Canciones>) getIntent().getSerializableExtra("canciones");
+        indiceCancion = getIntent().getExtras().getInt("indiceCancion");
+
 
         //captura
         progressBar = findViewById(R.id.seek_bar);
@@ -60,12 +66,87 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
         autores = findViewById(R.id.text_autores);
 
 
+        //poner cancion
+        ponerCancion();
+
+    }
+
+    public void cargarCancion(){
+        Picasso.get().load(canciones.get(indiceCancion).getImagen()).into(portada);
+        titulo.setText(canciones.get(indiceCancion).getNombre());
+        autores.setText(canciones.get(indiceCancion).getAutor());
+    }
+
+    public void cambioCancion(){
+        if (mPlayer != null) {
+            mPlayer.stop();
+            mPlayer.release();
+            mPlayer = null;
+        }
+
+        ponerCancion();
+    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.previous_button:
+                if(indiceCancion>0){
+                    indiceCancion--;
+                    cambioCancion();
+                }else{
+                    Toast.makeText(this, "No hay más canciones", Toast.LENGTH_SHORT).show();
+                }
+
+                break;
+            case R.id.next_button:
+                if(indiceCancion<canciones.size()-1){
+                    indiceCancion++;
+                    cambioCancion();
+                }else{
+                    Toast.makeText(this, "No hay más canciones", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.play_pause_button:
+                cambiarBotonPlay();
+                break;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mPlayer != null) {
+            mPlayer.stop();
+            mPlayer.release();
+            mPlayer = null;
+        }
+        super.onBackPressed();
+    }
+
+    public void cambiarBotonPlay(){
+        if(running){
+            //acciones
+            mPlayer.pause();
+
+            //cambiar boton
+            play_pause.setImageResource(R.drawable.play);
+            running = false;
+        }else{
+            //acciones
+            mPlayer.start();
+
+            //cambiar boton
+            play_pause.setImageResource(R.drawable.pause);
+            running = true;
+        }
+    }
+
+    public void ponerCancion(){
         cargarCancion();
 
         //audio
         try {
             mPlayer = new MediaPlayer();
-            mPlayer.setDataSource("https://cdn.discordapp.com/attachments/889276132044726275/1073354259086717049/onlymp3.to_-_CHORRITO_PA_LAS_ANIMAS-P79-1huorVw-192k-1654117303989.mp3");
+            mPlayer.setDataSource(canciones.get(indiceCancion).getAudio());
             mPlayer.prepare();
             mPlayer.start();
 
@@ -84,45 +165,6 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
 
         }catch (Exception e){
             System.out.println("Error E/S");
-        }
-
-    }
-
-    public void cargarCancion(){
-        Picasso.get().load(cancion.getImagen()).into(portada);
-        titulo.setText(cancion.getNombre());
-        autores.setText(cancion.getAutor());
-    }
-
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.previous_button:
-                break;
-            case R.id.next_button:
-                break;
-            case R.id.play_pause_button:
-                cambiarBotonPlay();
-                break;
-        }
-    }
-
-    public void cambiarBotonPlay(){
-        if(running){
-            //acciones
-            mPlayer.pause();
-
-            //cambiar boton
-            play_pause.setImageResource(R.drawable.play);
-            running = false;
-        }else{
-            //acciones
-            mPlayer.start();
-
-            //cambiar boton
-            play_pause.setImageResource(R.drawable.pause);
-            running = true;
         }
     }
 

@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#222121">
 
     <Switch
         android:id="@+id/switch_formato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
-        android:text="Video">
+        android:text="Video"
+        android:textColor="@color/white">
     </Switch>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaCanciones"

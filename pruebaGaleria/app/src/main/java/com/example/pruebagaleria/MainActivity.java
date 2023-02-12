@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements ListaCancionesAda
             startActivity(intent);
         }else{
             Intent intent=new Intent(this,AudioActivity.class);
-            intent.putExtra("cancion",listaArrayCanciones.get(posicion));
+            intent.putExtra("canciones",listaArrayCanciones);
+            intent.putExtra("indiceCancion", posicion);
             startActivity(intent);
         }
     }
