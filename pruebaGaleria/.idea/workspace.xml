@@ -43,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "D:/Usuarios/aiglesiasc19/Documents/GitHub/GALERIA/Galeria-reproductor/pruebaGaleria",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "emulator"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Usuarios/aiglesiasc19/Documents/GitHub/GALERIA/Galeria-reproductor/pruebaGaleria&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Usuarios\aiglesiasc19\Documents\GitHub\GALERIA\Galeria-reproductor\pruebaGaleria\app\src\main\res\raw" />
@@ -63,6 +63,7 @@
       <recent name="C:\Users\Aaron\Documents\GitHub\Galeria-reproductor\pruebaGaleria\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Usuarios\aiglesiasc19\Documents\GitHub\GALERIA\Galeria-reproductor\pruebaGaleria\app\src\main\res\back" />
       <recent name="D:\Usuarios\aiglesiasc19\Documents\GitHub\GALERIA\Galeria-reproductor\pruebaGaleria\app\src\main\res\raw" />
       <recent name="D:\Usuarios\aiglesiasc19\Documents\GitHub\GALERIA\Galeria-reproductor\pruebaGaleria\app\src\main\res\drawable" />
     </key>
