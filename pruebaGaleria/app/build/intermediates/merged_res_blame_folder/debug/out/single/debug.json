@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_cancion_item.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\cancion_item.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/layout_activity_audio.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_audio.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/drawable_progress_shape.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/drawable/progress_shape.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_prueba.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\prueba.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_next.png.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\next.png"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/layout_activity_video.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_video.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_back.png.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\back.png"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\raw_cancion1.mp3.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\raw\\cancion1.mp3"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_activity_audio.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_audio.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_cancion.jpg.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\cancion.jpg"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/layout_cancion_item.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/cancion_item.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_pause.png.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\pause.png"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_activity_maps.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-merged_res-33:/drawable_thumb_shape.xml.flat",
+        "source": "com.example.pruebagaleria.app-main-35:/drawable/thumb_shape.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\xml_backup_rules.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_activity_main.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\drawable_play.png.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\drawable\\play.png"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-merged_res-33:\\layout_activity_video.xml.flat",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_video.xml"
+    }
+]

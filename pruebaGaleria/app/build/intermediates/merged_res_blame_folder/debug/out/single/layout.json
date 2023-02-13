@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.example.pruebagaleria.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\activity_main.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\activity_video.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_video.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-mergeDebugResources-32:/layout/activity_video.xml",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_video.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\activity_audio.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_audio.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-mergeDebugResources-32:/layout/activity_audio.xml",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/activity_audio.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\activity_maps.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "com.example.pruebagaleria.app-mergeDebugResources-32:/layout/cancion_item.xml",
+        "source": "com.example.pruebagaleria.app-main-35:/layout/cancion_item.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\prueba.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\prueba.xml"
+    },
+    {
+        "merged": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-mergeDebugResources-32:\\layout\\cancion_item.xml",
+        "source": "D:\\Usuarios\\aiglesiasc19\\.gradle\\daemon\\7.4\\com.example.pruebagaleria.app-main-35:\\layout\\cancion_item.xml"
+    }
+]
